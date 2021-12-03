@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 /// <summary>
-///允许用户通过按escape关闭应用程序  
+/// Allows the user to close the application by pressing escape
 /// </summary>
 public class EscapeToQuitApplication : MonoBehaviour
 {

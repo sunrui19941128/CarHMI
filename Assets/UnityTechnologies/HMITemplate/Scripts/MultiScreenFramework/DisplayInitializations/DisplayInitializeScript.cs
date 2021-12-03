@@ -5,7 +5,7 @@ using UnityEngine;
 namespace MultiScreenFramework.DisplayInitializations
 {
     /// <summary>
-    /// 每个场景在场景管理器中都有这个脚本。 用于管理特定场景的显示设置  
+    /// Each scene has this script on the scene manager. Used to manage the display settings for a specific scene
     /// </summary>
     public class DisplayInitializeScript : MonoBehaviour
     {

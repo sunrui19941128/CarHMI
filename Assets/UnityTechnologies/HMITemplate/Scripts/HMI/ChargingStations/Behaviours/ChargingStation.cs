@@ -5,12 +5,12 @@ using HMI.Vehicles.Behaviours.Base;
 namespace HMI.ChargingStations.Behaviours
 {
     /// <summary>
-    /// 电动汽车充电站
+    /// A charging station for electric vehicles
     /// </summary>
     public class ChargingStation : EnergyInfluencer
     {
         /// <summary>
-        ///充电站配置数据
+        /// Configuration data for a charging station
         /// </summary>
         public ChargingStationData ChargingStationData;
 

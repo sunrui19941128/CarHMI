@@ -4,12 +4,12 @@ using UnityEngine;
 namespace HMI.Vehicles.Behaviours
 {
     /// <summary>
-    /// 车辆控制器
+    /// Controls the vehicle
     /// </summary>
     public class VehicleController : MonoBehaviour
     {
         /// <summary>
-        ///切换下一个档位
+        /// Switch vehicle to next gear
         /// </summary>
         public void NextGear()
         {
@@ -17,7 +17,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 切换到前档
+        /// Switch vehicle to previous gear
         /// </summary>
         public void PreviousGear()
         {
@@ -25,7 +25,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 车辆加速
+        /// Accelerate vehicle
         /// </summary>
         public void Accelerate()
         {
@@ -33,7 +33,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 刹车
+        /// Brake vehicle
         /// </summary>
         public void Brake()
         {
@@ -41,7 +41,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 开始或暂停引擎
+        /// Start/Stop Engine
         /// </summary>
         public static void StartStopEngine()
         {
@@ -58,7 +58,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 提高 ADAS 目标速度
+        /// Increase ADAS goal speed
         /// </summary>
         public static void AdasIncreaseGoalSpeed()
         {
@@ -66,7 +66,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 减小自动驾驶的速度
+        /// Decrease ADAS goal speed
         /// </summary>
         public static void AdasDecreaseGoalSpeed()
         {
@@ -74,7 +74,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 设置自动巡航 
+        /// Set ADAS 
         /// </summary>
         public static void AdasSet()
         {
@@ -82,7 +82,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 取消自动驾驶
+        /// Cancel ADAS command
         /// </summary>
         public static void AdasCancel()
         {

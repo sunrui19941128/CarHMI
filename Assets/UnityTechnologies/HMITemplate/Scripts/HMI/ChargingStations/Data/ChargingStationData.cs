@@ -3,15 +3,15 @@
 namespace HMI.ChargingStations.Data
 {
     /// <summary>
-    /// 充电站配置数据
+    /// Configuration data for a charging station
     /// </summary>
     [CreateAssetMenu(fileName = "ChargingStationData.asset", menuName = "HMI/Charging Stations/Charging Station", order = 1)]
     public class ChargingStationData : ScriptableObject
     {
         /// <summary>
-        /// 充电站提供的电量以千瓦时计
+        /// Power provided by the charging station in Kwh
         /// </summary>
-        [Tooltip("充电站提供的电量以千瓦时计")]
+        [Tooltip("Power provided by the charging station in Kwh")]
         [Range(1, 1000)]
         public float PowerGenerated;
     }

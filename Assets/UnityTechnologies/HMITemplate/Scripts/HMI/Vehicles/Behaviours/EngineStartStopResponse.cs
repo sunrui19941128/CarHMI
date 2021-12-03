@@ -9,7 +9,7 @@ using UnityEngine;
 namespace HMI.Vehicles.Behaviours
 {
     /// <summary>
-    /// 响应发动机启停事件，将变速器转换为P  
+    /// Responds to the engine start stop events, turns the transmission into P
     /// </summary>
     public class EngineStartStopResponse : MonoBehaviour
     {

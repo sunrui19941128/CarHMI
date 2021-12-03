@@ -9,7 +9,7 @@ using Vehicles.Behaviours.Base;
 namespace HMI.Vehicles.Behaviours
 {
     /// <summary>
-    /// 车辆的传动系统
+    /// Transmission system of the vehicle
     /// </summary>
     [RequireComponent(typeof(VehicleDataProvider))]
     public class Transmission : TransmissionBase
@@ -20,7 +20,7 @@ namespace HMI.Vehicles.Behaviours
         private List<string> GearNamesInternal;
 
         /// <summary>
-        /// 档位名称 (Read Only).
+        /// Gear names (Read Only).
         /// </summary>
         public override IList<string> GearNames
         {
@@ -91,7 +91,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 将变速器转到所需的齿轮上
+        /// Switches the transmission to the desired gear
         /// </summary>
         public override void SwitchToDesiredGear(string name)
         {
@@ -108,7 +108,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 将变速器转到所需的齿轮上
+        /// Switches the transmission to the desired gear
         /// </summary>
         public override void SwitchToDesiredGear(int idx)
         {

@@ -10,15 +10,18 @@ namespace HMI.Vehicles.Services
     public class VehicleService : MonoBehaviour
     {
         /// <summary>
-        /// 要实例化的车辆
+        /// Vehicle prefab that will be instantiated
         /// </summary>
         public GameObject VehiclePrefab;
 
         /// <summary>
-        /// 车辆实例
+        /// Single instance of the vehicle
         /// </summary>
         private static GameObject Instance;
 
+        /// <summary>
+        /// Unit Awake callback
+        /// </summary>
         private void Awake()
         {
             if (Instance == null)
@@ -29,7 +32,7 @@ namespace HMI.Vehicles.Services
         }
 
         /// <summary>
-        /// 车辆的变速箱
+        /// Get the transmission on the vehicle
         /// </summary>
         public static TransmissionBase GetTransmission()
         {

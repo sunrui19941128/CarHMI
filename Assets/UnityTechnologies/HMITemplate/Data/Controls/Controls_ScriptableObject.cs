@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// 控件数据包含控件标识符(名称)和分配给该标识符的键的映射  
-///用户可以使用它来映射一个按键到一个更符合逻辑的名称。  
+/// Controls Data containing a mapping of a control identifier (name) and the key assigned to the idfentifier
+/// The user can use this to map a keypress to a more logical name.
 /// </summary>
 [CreateAssetMenu(fileName = "ControlsData", menuName = "HMI/VehicleControlsSetup", order = 1)]
 public class Controls_ScriptableObject : ScriptableObject
 {
     /// <summary>
-    /// 用户将生成的控件类列表  
-    /// Name用于标识该控件  
-    /// Assigned Key用于识别按键执行操作。  
+    /// Class of Controls List that the user will generate
+    /// Name is used for identification of this control
+    /// Assigned Key is used for recognizing key presses to perform actions.
     /// </summary>
 
     [Serializable]
     public class ControlsList
     {
         /// <summary>
-        /// 控制器的位移标识
+        /// Control identifier
         /// </summary>
         public string Name;
 
         /// <summary>
-        /// 分配的按键
+        /// Key assigned to the identifier
         /// </summary>
         public KeyCode AssignedKey;
 
         /// <summary>
-        ///按键应该被连续地触发，还是只有当一个完整的按键被注册?  
+        /// Should the key press be continuously triggered, or only if a complete press is registered?
         /// </summary>
         public bool Continuous;
     }

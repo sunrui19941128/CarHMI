@@ -6,7 +6,7 @@ using Vehicles.Behaviours.Base;
 namespace HMI.Vehicles.Behaviours
 {
     /// <summary>
-    /// 电动汽车由电力驱动的车辆
+    /// A vehicle powered by electric power
     /// </summary>
     [RequireComponent(typeof(EngineBase))]
     [RequireComponent(typeof(BrakesBase))]
@@ -15,27 +15,27 @@ namespace HMI.Vehicles.Behaviours
     public class ElectricVehicle : VehicleBase
     {
         /// <summary>
-        /// 发动机
+        /// Engine of the vehicle
         /// </summary>
         private EngineBase Engine;
 
         /// <summary>
-        ///刹车
+        /// Brakes of the vehicle
         /// </summary>
         private BrakesBase Brakes;
 
         /// <summary>
-        /// 变速箱系统
+        /// Transmission system in the vehicle
         /// </summary>
         private TransmissionBase Transmission;
 
         /// <summary>
-        /// 阻力参数
+        /// Drag Data
         /// </summary>
         private DragData DragData;
 
         /// <summary>
-        /// 当前车辆速度
+        /// Current speed of the vehicle
         /// </summary>
         public override float CurrentSpeed
         {
@@ -43,7 +43,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        ///车辆加速度 对应踩油门
+        /// Accelerate the vehicle
         /// </summary>
         /// <param name="strength">Relative strength of acceleration [0.0..1.0].</param>
         public override void Accelerate(float strength)
@@ -61,7 +61,7 @@ namespace HMI.Vehicles.Behaviours
         }
 
         /// <summary>
-        /// 切换下一个档位
+        /// Switch to next gear
         /// </summary>
         public override void NextGear()
         {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11399,7 +11399,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -12833,7 +12832,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -14878,15 +14876,11 @@ MonoBehaviour:
   - SteeringWheelControl_HeadlightsToggle
   - CenterConsoleControls_StartEngine
   - CenterConsoleControls_HazardLights
-  - CenterConsoleControls_IVI_ChargingMenu
-  - CenterConsoleControls_IVI_NavigationMenu
   - CenterConsoleControls_IVI_CarMenu
+  - CenterConsoleControls_IVI_ChargingMenu
   - CenterConsoleControls_IVI_MusicMenu
+  - CenterConsoleControls_IVI_NavigationMenu
   - CenterConsoleControls_IVI_ProfileMenu
-  - CenterConsoleControls_IVIKnob_Ok
-  - CenterConsoleControls_IVIKnob_Back
-  - CenterConsoleControls_IVIKnob_Left
-  - CenterConsoleControls_IVIKnob_Right
   - CenterConsoleControls_MediaKnob_Ok
   - CenterConsoleControls_MediaKnob_Previous
   - CenterConsoleControls_MediaKnob_Skip
@@ -14896,8 +14890,16 @@ MonoBehaviour:
   - CenterConsoleControls_PRNDL_Previous
   - Accelerate
   - Brake
+  - ADAS_Increase
+  - ADAS_Decrease
+  - ADAS_Set
+  - ADAS_Cancel
   - AudioVolumeUp
   - AudioVolumeDown
+  - IVIKnob_Ok
+  - IVIKnob_Back
+  - IVIKnob_Left
+  - IVIKnob_Right
   KeyPressEvents:
   - ControlMappingName: CenterConsoleControls_PRNDL_Next
     KeyMappedControl: RightBracket
@@ -22372,7 +22374,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
@@ -26609,7 +26610,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
-  m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 0
   m_Antialiasing: 0
   m_AntialiasingQuality: 2

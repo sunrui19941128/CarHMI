@@ -7,27 +7,29 @@ using Vehicles.Behaviours.Base;
 namespace HMI.Vehicles.Behaviours
 {
     /// <summary>
-    /// 里程表表示旅行的距离
+    /// Odometer represents distance traveled
     /// </summary>
     [RequireComponent(typeof(VehicleBase))]
     [RequireComponent(typeof(VehicleDataProvider))]
     public class Odometer : OdometerBase
     {
         /// <summary>
-        /// 代表里程表的数据集
+        /// The dataset representing the odometer
         /// </summary>
         private OdometerData OdometerData;
 
         /// <summary>
-        /// 车辆
+        /// Vehicle that this odometer is a part of
         /// </summary>
         private VehicleBase Vehicle;
 
-    
+        /// <summary>
+        /// Internal field for read only property
+        /// </summary>
         private double DistanceTraveledInternal;
 
         /// <summary>
-        ///车辆行驶的总距离，以公里为单位  
+        /// The distance the vehicle has travelled in total in kilometers
         /// </summary>
         public override double DistanceTraveled { get { return DistanceTraveledInternal; } }
 
@@ -37,7 +39,7 @@ namespace HMI.Vehicles.Behaviours
         private double TripDistanceTraveledInternal;
 
         /// <summary>
-        /// 车辆行驶的距离，以公里为单位  
+        /// The distance the vehicle has travelled this trip in kilometers
         /// </summary>
         public override double TripDistanceTraveled { get { return TripDistanceTraveledInternal; } }
 
